@@ -1,1 +1,0 @@
-//declares function so main.cpp can use them    
