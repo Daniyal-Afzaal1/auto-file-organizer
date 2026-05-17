@@ -1,0 +1,54 @@
+{
+  "folders": {
+    "Images": [],
+    "Documents": [],
+    "Videos": [],
+    "Audio": [],
+    "Archives": [],
+    "Programs": [],
+    "Code": [],
+    "Others": []
+  },
+  "rules": {
+    ".jpg": "Images",
+    ".jpeg": "Images",
+    ".png": "Images",
+    ".gif": "Images",
+    ".bmp": "Images",
+    ".webp": "Images",
+
+    ".pdf": "Documents",
+    ".doc": "Documents",
+    ".docx": "Documents",
+    ".txt": "Documents",
+    ".ppt": "Documents",
+    ".pptx": "Documents",
+    ".xls": "Documents",
+    ".xlsx": "Documents",
+
+    ".mp4": "Videos",
+    ".mkv": "Videos",
+    ".avi": "Videos",
+    ".mov": "Videos",
+
+    ".mp3": "Audio",
+    ".wav": "Audio",
+    ".aac": "Audio",
+
+    ".zip": "Archives",
+    ".rar": "Archives",
+    ".7z": "Archives",
+
+    ".exe": "Programs",
+    ".msi": "Programs",
+
+    ".cpp": "Code",
+    ".c": "Code",
+    ".h": "Code",
+    ".py": "Code",
+    ".java": "Code",
+    ".js": "Code",
+    ".html": "Code",
+    ".css": "Code"
+  }
+}
