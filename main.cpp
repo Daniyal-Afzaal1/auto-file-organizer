@@ -186,9 +186,9 @@
 // }
 
 #include "include/ConfigManager.h"
+#include "include/FileScanner.h"
 
 int main(){
-  parseFolders();
-  parseRules();
+  scanFiles();
   return 0;
 }
