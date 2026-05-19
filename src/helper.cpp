@@ -16,12 +16,25 @@ void MainMenu(){
     cout << "2. Search File\n";
     cout << "3. Undo Last Action\n";
     cout << "4. View Activity Log\n";
-    cout << "5. Exit\n";
+    cout << "5. Display Folder Structure\n";
+    cout << "6. Exit\n";
     cout << "-----------------------------------------------------------------------------------------------------------------\n";
     cout << "Enter your choice: ";
 }
 
 void displaySuccessMessage()
 {
-    cout << "\nOperation completed successfully.\n";
+    cout << "\033[32m\nOperation completed successfully.\033[0m\n";
+}
+
+string getCurrentTime()
+{
+    time_t now = time(0);
+    char *dt = ctime(&now);
+    string timeStr = dt;
+
+    // remove trailing newline
+    timeStr.pop_back();
+
+    return timeStr;
 }
