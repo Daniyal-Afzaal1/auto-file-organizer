@@ -187,8 +187,17 @@
 
 #include "include/ConfigManager.h"
 #include "include/FileScanner.h"
+#include "include/TreeManager.h"
 
 int main(){
+  loadConfig();
+  parseFolders();
+  parseRules();
+
   scanFiles();
+
+  buildTree();
+  displayTree(root);
+
   return 0;
 }
