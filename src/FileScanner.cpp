@@ -29,7 +29,7 @@ fs::path getDirectoryInput()
             }
             else
             {
-                cout << "Cannot detect home directory!\n";
+                 cout << "\033[31mCannot detect home directory!\033[0m" << endl;
                 continue;
             }
         }
@@ -37,13 +37,13 @@ fs::path getDirectoryInput()
         // Validates path
         if (!fs::exists(Path))
         {
-            cout << "Path does not exist!\n";
+            cout << "\033[31mPath does not exist!\033[0m" << endl;
             continue;
         }
 
         if (!fs::is_directory(Path))
         {
-            cout << "Path is not a directory!\n";
+             cout << "\033[31mPath is not a directory!\033[0m" << endl;
             continue;
         }
 
@@ -74,13 +74,4 @@ void scanFiles()
         return;
     }
 
-    // cout << "\nFiles in Queue:\n"; //just for testing
-
-    // queue<fs::path> temp = files;
-
-    // while (!temp.empty())
-    // {
-    //     cout << temp.front() << endl;
-    //     temp.pop();
-    // }
 }
