@@ -1,5 +1,7 @@
 #include "../include/FileScanner.h"
 
+ fs::path Path;
+
 fs::path getDirectoryInput()
 {
     string input;
@@ -9,7 +11,7 @@ fs::path getDirectoryInput()
         cout << "Enter path to organize files: ";
         getline(cin, input);
 
-        fs::path Path(input);
+        Path = input;
 
         // Converts relative path to absolute using HOME/USERPROFILE
         if (!Path.is_absolute())

@@ -9,6 +9,8 @@ using namespace std;
 namespace fs = filesystem;
 
 extern queue<fs::path> files;
+extern fs::path Path;
+
 
 //function declarations
 fs::path getDirectoryInput();
