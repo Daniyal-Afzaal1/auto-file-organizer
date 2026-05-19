@@ -6,7 +6,7 @@ string loadConfig() // opens file and add the data in a string
 
     if (!file.is_open())
     {
-        cout << "Error opening config file\n";
+         cout << "\033[31mError: Could not open config/config.json file!\033[0m" << endl;
         return "";
     }
 
@@ -25,7 +25,7 @@ void parseFolders()
     string Data = loadConfig();
     if (Data.empty())
     {
-        cout << "Error occurred !\n";
+         cout << "\033[31mError: Config file is empty or failed to load folders!\033[0m" << endl;
         return;
     }
 
@@ -80,7 +80,7 @@ void parseRules() // fills Rules unordered_map
     string data = loadConfig();
     if (data.empty())
     {
-        cout << "Error occurred !\n";
+         cout << "\033[31mError: Config file is empty or failed to load rules!\033[0m" << endl;
         return;
     }
 
